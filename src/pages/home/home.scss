@@ -1,6 +1,20 @@
 @import '../../styles/variables/colors/colors';
 @import '../../styles/variables/mixins/font-style';
 
+.messageWrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .responsiveMessage{
+    @include subtitle_1;
+    color: $black;
+    text-align: center;
+  }
+}
+
 .home{
   width: 100vw;
   height: 93vh;

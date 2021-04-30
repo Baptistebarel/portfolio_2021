@@ -3,7 +3,7 @@
     "title" : "E-commerce website",
     "description" : "This project is an e-commerce website under development that i'm doing using React, Next.js, GraphQL and Keystone. It's a challenge i set myself to progress in react and have a better understanding of back-end development.",
     "techno" : ["React", "Next.js", "GraphQL", "MongoDB"],
-    "url" : " ",
+    "url" : "",
     "isUnderConstruction" : true
   },
   {
@@ -17,12 +17,12 @@
     "title" : "WebGL Experience",
     "description" : "This is a school project using webGL on the space theme. In this project you are in a 3D observatory and you can explore 3 different space theme in 3D using Three.js. This project was individual and made in a limited time of 2 weeks.",
     "techno" : ["WebGL", "Three.js"],
-    "url" : " ",
+    "url" : "https://webgl-experience.netlify.app/",
     "isUnderConstruction" : false
   },
   {
     "title" : "Immaterial culture",
-    "description" : "It is a web documentary produced as part of a limited-time group school project. This project highlights the intangible cultures of different peoples that could be forgotten today. Our goal was to highlight these often forgotten cultures and their great richness.",
+    "description" : "It is a web documentary produced as part of a limited-time group school project. This project highlights the intangible cultures of different people that could be forgotten today. Our goal was to highlight these often forgotten cultures and their great richness.",
     "techno" : ["Javascript", "POO"],
     "url" : "https://webdocksociety.netlify.app/index.html",
     "isUnderConstruction" : false
