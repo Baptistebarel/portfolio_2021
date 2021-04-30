@@ -1,0 +1,45 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+
+.header{
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid $black;
+
+  .header__logo-container{
+    width: 7vh;
+    height: 7vh;
+    background-color: $black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header__logo-text{
+      @include title_1;
+      color: $white;
+    }
+  }
+
+  .header__navbar{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid $black;
+    box-sizing: border-box;
+
+    .header__navbar__link{
+      text-transform: uppercase;
+      @include subtitle_1;
+      color: $black;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
