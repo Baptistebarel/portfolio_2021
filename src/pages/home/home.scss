@@ -18,9 +18,15 @@
 
 .home{
   width: 100vw;
-  height: 93vh;
+  height: calc(100vh - 85px);
   background: $white;
   display: flex;
+  @include media(">=tablet", "<1500px") {
+    height: calc(100vh - 75px);
+  }
+  @include media("<tablet") {
+    height: calc(100vh - 70px);
+  }
 
   .home__left-column{
     height: 100%;
@@ -61,11 +67,18 @@
       width: 100%;
     }
 
+    .home__project:last-child{
+      @include media("<tablet") {
+        margin-bottom: 150px;
+      }
+    }
+
     .home__project{
       width: 100%;
       height: 600px;
       border-top: 1px solid $black;
       border-bottom: 1px solid $black;
+      box-sizing: border-box;
       margin: 5vh 0;
       display: flex;
       @include media(">=tablet", "<1500px") {
@@ -118,17 +131,17 @@
 
           .home__project-left__technologie{
             @include small;
+            width: 80px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: $red;
-            padding: 2% 5%;
             margin-right: 12px;
             border: 1px solid $red;
             border-radius: 16px;
             @include media("<tablet") {
-              padding: 2% 4%;
               margin-right: 6px;
-            }
-            @include media("<330px") {
-              padding: 2% 3%;
             }
           }
           .home__project-left__technologie:last-child{
