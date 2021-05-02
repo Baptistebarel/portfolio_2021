@@ -1,21 +1,37 @@
 @import '../../styles/variables/colors/colors';
 @import '../../styles/variables/mixins/font-style';
+@import 'include-media';
 
 .header{
   width: 100vw;
-  height: 7vh;
+  height: 85px;
   display: flex;
   box-sizing: border-box;
   border-bottom: 1px solid $black;
+  @include media(">=tablet", "<1500px") {
+    height: 75px;
+  }
+  @include media("<tablet") {
+    height: 70px;
+  }
 
   .header__logo-container{
-    width: 7vh;
-    height: 7vh;
+    width: 85px;
+    height: 85px;
     background-color: $black;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media(">=tablet", "<1500px") {
+      width: 75px;
+      height: 75px;
+    }
+    @include media("<tablet") {
+      width: 70px;
+      height: 70px;
+    }
+    
 
     .header__logo-text{
       @include title_1;
@@ -31,6 +47,16 @@
     align-items: center;
     border-right: 1px solid $black;
     box-sizing: border-box;
+    @include media(">=desktop", "<1500px") {
+      width: 30%;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 50%;
+    }
+    @include media("<tablet") {
+      width: 90%;
+      border-right: 0px;
+    }
 
     .header__navbar__link{
       text-transform: uppercase;
