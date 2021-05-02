@@ -1,17 +1,85 @@
 @import '../../styles/variables/colors/colors';
 @import '../../styles/variables/mixins/font-style';
 
-.messageWrapper{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  .responsiveMessage{
-    @include subtitle_1;
-    color: $black;
-    text-align: center;
+.aboutMobile{
+  width: 100vw;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  background-color: $black;
+
+  .aboutMobile__presentation-wrapper{
+    @include body;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    box-sizing: border-box;
+    padding: 0% 8%;
+  }
+  
+  .aboutMobile__photo-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+
+    .aboutMobile__photo{
+      width: 80%;
+      max-width: 300px;
+      margin-top: 10%;
+    }
+  }
+
+  .aboutMobile__socials{
+    width: 100%;
+    height: 180px;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 3% 0%;
+    margin-bottom: 30%;
+
+    .aboutMobile__socials-line{
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .aboutMobile__socials-link{
+        @include body;
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+  .aboutMobile__resume-wrapper{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $black;
+    background-color: $white;
+
+    .aboutMobile__resume{
+      @include body;
+      width: 40%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      background-color: $black;
+      color: $white;
+    }
   }
 }
 
