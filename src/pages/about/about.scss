@@ -1,11 +1,11 @@
 @import '../../styles/variables/colors/colors';
 @import '../../styles/variables/mixins/font-style';
+@import 'include-media';
 
 
 .aboutMobile{
   width: 100vw;
   height: calc(100vh - 70px);
-  overflow-y: scroll;
   background-color: $black;
 
   .aboutMobile__presentation-wrapper{
@@ -44,7 +44,6 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 3% 0%;
-    margin-bottom: 30%;
 
     .aboutMobile__socials-line{
       width: 100%;
@@ -87,6 +86,10 @@
   width: 100vw;
   height: 93vh;
   background: $white;
+  @include media("<900px") {
+    height: 88vh
+  }
+  
 
   .about__top{
     width: 100%;
@@ -99,17 +102,31 @@
       height: 100%;
       display: flex;
       justify-content: flex-end;
+      @include media(">=desktop", "<1300px") {
+        width: 45%;
+      }
+      @include media(">=900px", "<desktop") {
+        width: 50%;
+      }
+      @include media("<900px") {
+        width: 60%;
+        justify-content: center;
+      }
 
       .top__firstSection-wrapper{
         width: 70%;
         height: 100%;
         border-right: 1px solid $black;
         border-left: 1px solid $black;
+        @include media("<900px") {
+          width: 80%;
+          justify-content: center;
+        }
 
         .firstSection-left-presentation{
           @include body;
           width: 100%;
-          height: 50%;
+          height: 210px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -128,6 +145,15 @@
       flex-direction: column;
       width: 42%;
       height: 100%;
+      @include media(">=desktop", "<1300px") {
+        width: 35%;
+      }
+      @include media(">=900px", "<desktop") {
+        width: 30%;
+      }
+      @include media("<900px") {
+        display: none;
+      }
 
       .top__secondSection-firstLine{
         width: 100%;
@@ -160,6 +186,9 @@
       overflow: hidden;
       background-image: url("../../assets/images/about/new-york.jpeg");
       background-size: cover;
+      @include media("<900px") {
+        width: 40%;
+      }
     }
 
   }
@@ -174,6 +203,9 @@
       height: 100%;
       display: flex;
       align-items: flex-end;
+      @include media("<900px") {
+        width: 40%
+      }
 
       .bottom__firstSection-wrapper{
         width: 100%;
@@ -181,6 +213,13 @@
         border-top: 1px solid $black;
         display: flex;
         justify-content: flex-end;
+        @include media(">=desktop", "<1300px") {
+          height: 40%;
+        }
+        @include media("<desktop") {
+          height: 45%;
+        }
+        
 
         .bottom__firstSection__socials{
           width: 60%;
@@ -190,6 +229,9 @@
           flex-direction: column;
           box-sizing: border-box;
           padding: 3% 0%;
+          @include media("<900px") {
+            width: 100%
+          }
 
           .bottom__firstSection__socials-Line{
             width: 100%;
@@ -211,11 +253,18 @@
     .about__bottom__secondSection{
       width: 42%;
       height: 100%;
+      @include media("<900px") {
+        width: 30%
+      }
 
       .bottom__secondSection__wrapper{
         width: 45%;
         height: 100%;
         border-right: 1px solid $black;
+        @include media("<900px") {
+          width: 100%;
+          height: 55%;
+        }
 
         .bottom__secondSection__imgWrapper{
           width: 100%;
@@ -223,6 +272,15 @@
           overflow: hidden;
           background-image: url("../../assets/images/about/baptiste.jpg");
           background-size: cover;
+          @include media(">=desktop", "<1300px") {
+            height: 60%;
+          }
+          @include media(">=900px", "<desktop") {
+            height: 55%;
+          }
+          @include media("<900px") {
+            height: 100%;
+          }
         }
       }
     }
@@ -233,12 +291,19 @@
       display: flex;
       align-items: center;
       border-left: 1px solid $black;
+      @include media("<900px") {
+        width: 30%
+      }
 
       .bottom__thirdSection__wrapper{
         width: 100%;
         height: 25%;
         border-top: 1px solid $black;
         border-bottom: 1px solid $black;
+        @include media("<900px") {
+          display: flex;
+          justify-content: flex-end;
+        }
 
         .bottom__thirdSection__linkWrapper{
           height: 100%;
