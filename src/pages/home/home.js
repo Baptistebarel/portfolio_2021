@@ -7,6 +7,10 @@ import commerce from "../../assets/images/projects/commerce.png"
 import culture from "../../assets/images/projects/culture.png"
 import horror from "../../assets/images/projects/horror.png"
 import webGL from "../../assets/images/projects/webGL.png"
+import comEcole from "../../assets/images/projects/comEcole.png"
+import coSafe from "../../assets/images/projects/coSafe.png"
+import enki from "../../assets/images/projects/enki.png"
+import wastic from "../../assets/images/projects/wastic.png"
 
 const Home = () => {
 
@@ -30,21 +34,29 @@ const Home = () => {
               imageUrl = horror
             } else if(project.title === "WebGL Experience"){
               imageUrl = webGL
-            } else {
+            } else if(project.title === "Immaterial culture"){
               imageUrl = culture
+            } else if(project.title === "Com'école"){
+              imageUrl = comEcole
+            } else if(project.title === "CoSafe"){
+              imageUrl = coSafe
+            } else if(project.title === "Enki"){
+              imageUrl = enki
+            } else {
+              imageUrl = wastic
             }
             return(
               <div className="home__project">
                 <div className="home__project-left">
                   <h3 className="home__project-left__title">{project.title}</h3>
                   <p className="home__project-left__description">{project.description}</p>
-                  <span className="home__project-left__subtitle">Technologies :</span>
+                  <span className="home__project-left__subtitle">{project.expertise === "dev" ? "Technologies :" : "Themes :"}</span>
                   <div className="home__project-left__technologies">
                     {project.techno.map((techno, i) => 
                       <span className="home__project-left__technologie">{techno}</span>
                     )}
                   </div>
-                  <a href={project.url} target="_blank" rel="noreferrer" className="home__project-left__button">{project.isUnderConstruction ? "Coming soon" : "Visit website"}</a>
+                  <a href={project.url} target="_blank" rel="noreferrer" className="home__project-left__button">{project.isUnderConstruction ? "Coming soon" : project.expertise === "dev" ? "Visit website" : "Prototype"}</a>
                 </div>
                 <div className="home__project-right">
                   <img className="home__project-left__img" src={imageUrl} alt="Project preview"/>

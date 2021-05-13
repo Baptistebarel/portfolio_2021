@@ -4,27 +4,63 @@
     "description" : "This project is an e-commerce website under development that i'm doing using React, Next.js, GraphQL and Keystone. It's a challenge i set myself to progress in react and have a better understanding of back-end development.",
     "techno" : ["React", "Next.js", "GraphQL", "MongoDB"],
     "url" : "",
-    "isUnderConstruction" : true
+    "isUnderConstruction" : true,
+    "expertise" : "dev"
   },
   {
     "title" : "Horror movies",
     "description" : "This project highlights the place of the horror genre since 1960 through 4 key dates. We worked in groups from a large database that we sorted and then illustrated in the form of several graphs on the site to best visualize the data.",
     "techno" : ["React", "Sass", "d3.js"],
     "url" : "https://data-design-project.netlify.app/",
-    "isUnderConstruction" : false
+    "isUnderConstruction" : false,
+    "expertise" : "dev"
+  },
+  {
+    "title" : "Com'école",
+    "description" : "Produced as part of a 6-month group UX/UI project about children's education in times of exceptional health crisis, Com'école is an app that allows students, teachers and parents to interact together in order to promote the exchange and proper monitoring of the student.",
+    "techno" : ["Education", "Covid"],
+    "url" : "https://www.figma.com/proto/aHx6qHRU8IpsSSPu0JMakG/H4-Com-%C3%A9cole?page-id=144%3A113&node-id=511%3A1955&viewport=534%2C463%2C0.08719450235366821&scaling=scale-down",
+    "isUnderConstruction" : false,
+    "expertise" : "design"
   },
   {
     "title" : "WebGL Experience",
     "description" : "This is a school project using webGL on the space theme. In this project you are in a 3D observatory and you can explore 3 different space theme in 3D using Three.js. This project was individual and made in a limited time of 2 weeks.",
     "techno" : ["WebGL", "Three.js"],
     "url" : "https://webgl-experience.netlify.app/",
-    "isUnderConstruction" : false
+    "isUnderConstruction" : false,
+    "expertise" : "dev"
+  },
+  {
+    "title" : "CoSafe",
+    "description" : "CoSafe is a UX/UI project on the subject of safety during solo travel. It's an application that allows you to share your location with a circle of trusted people, allowing them to watch over you during your nocturnal movements.",
+    "techno" : ["Security", "Confidence", "Safety"],
+    "url" : "https://www.figma.com/proto/iGXnKmBwRAAxBHZbEgg0tA/CoSafe?page-id=394%3A0&node-id=394%3A1371&viewport=778%2C295%2C0.1025920882821083&scaling=scale-down",
+    "isUnderConstruction" : false,
+    "expertise" : "design"
   },
   {
     "title" : "Immaterial culture",
     "description" : "It is a web documentary produced as part of a limited-time group school project. This project highlights the intangible cultures of different people that could be forgotten today. Our goal was to highlight these often forgotten cultures and their great richness.",
     "techno" : ["Javascript", "POO"],
     "url" : "https://webdocksociety.netlify.app/index.html",
-    "isUnderConstruction" : false
+    "isUnderConstruction" : false,
+    "expertise" : "dev"
+  },
+  {
+    "title" : "Enki",
+    "description" : "Enki is a UX / UI project realized in group on the environmental stakes of buildings. It is a call for projects and call for applications around the issues of thermal renovation of buildings.",
+    "techno" : ["Ecology", "Renovation"],
+    "url" : "https://www.figma.com/proto/3gsNNwcu9FC96QbiCoYCo8/Projet-ENKI-%C3%89quipe-1_save?page-id=2%3A4810&node-id=2%3A23179&viewport=553%2C397%2C0.04104774445295334&scaling=min-zoom",
+    "isUnderConstruction" : false,
+    "expertise" : "design"
+  },
+  {
+    "title" : "Wastic",
+    "description" : "Wastic is a UX / UI project conducted in group on the subject of ecology. It is a platform for sharing, creating and publishing content on renewable energies, aimed at young generations facing these challenges.",
+    "techno" : ["Ecology", "Local", "Energy"],
+    "url" : "https://www.figma.com/proto/l9ihgkWUNf1g1O7Wwpx223/Wastic-prototype?page-id=0%3A1&node-id=48%3A72857&viewport=929%2C76%2C0.06218644976615906&scaling=scale-down",
+    "isUnderConstruction" : false,
+    "expertise" : "design"
   }
 ]
